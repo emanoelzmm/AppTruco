@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/jogador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Jogador 1:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pontos_jogador_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="00"
+        app:layout_constraintBottom_toBottomOf="@+id/jogador1"
+        app:layout_constraintStart_toEndOf="@+id/jogador1" />
+
+    <Button
+        android:id="@+id/um_ponto_jogador_1"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="mais_um_pontos_jogador_1"
+        android:text="+1"
+        app:layout_constraintStart_toStartOf="@+id/jogador1"
+        app:layout_constraintTop_toBottomOf="@+id/jogador1" />
+
+    <Button
+        android:id="@+id/tres_pontos_jogador_1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:onClick="mais_tres_pontos_jogador_1"
+        android:text="+3"
+        app:layout_constraintBottom_toBottomOf="@+id/um_ponto_jogador_1"
+        app:layout_constraintStart_toEndOf="@+id/um_ponto_jogador_1" />
+
+    <Button
+        android:id="@+id/seis_pontos_jogador_1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:onClick="mais_seis_pontos_jogador_1"
+        android:text="+6"
+        app:layout_constraintBottom_toBottomOf="@+id/tres_pontos_jogador_1"
+        app:layout_constraintStart_toEndOf="@+id/tres_pontos_jogador_1" />
+
+    <Button
+        android:id="@+id/nove_pontos_jogador_1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:onClick="mais_nove_pontos_jogador_1"
+        android:text="+9"
+        app:layout_constraintBottom_toBottomOf="@+id/seis_pontos_jogador_1"
+        app:layout_constraintStart_toEndOf="@+id/seis_pontos_jogador_1" />
+
+    <Button
+        android:id="@+id/doze_pontos_jogador_1"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:onClick="mais_doze_pontos_jogador_1"
+        android:text="+12"
+        app:layout_constraintBottom_toBottomOf="@+id/nove_pontos_jogador_1"
+        app:layout_constraintStart_toEndOf="@+id/nove_pontos_jogador_1" />
+
+    <TextView
+        android:id="@+id/jogador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Jogador 2:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/um_ponto_jogador_1" />
+
+    <TextView
+        android:id="@+id/pontos_jogador_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="00"
+        app:layout_constraintBottom_toBottomOf="@+id/jogador2"
+        app:layout_constraintStart_toEndOf="@+id/jogador2" />
+
+    <Button
+        android:id="@+id/um_ponto_jogador_2"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="mais_um_pontos_jogador_2"
+        android:text="+1"
+        app:layout_constraintStart_toStartOf="@+id/jogador1"
+        app:layout_constraintTop_toBottomOf="@+id/jogador2" />
+
+    <Button
+        android:id="@+id/tres_pontos_jogador_2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:onClick="mais_tres_pontos_jogador_2"
+        android:text="+3"
+        app:layout_constraintBottom_toBottomOf="@+id/um_ponto_jogador_2"
+        app:layout_constraintStart_toEndOf="@+id/um_ponto_jogador_1" />
+
+    <Button
+        android:id="@+id/seis_pontos_jogador_2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:onClick="mais_seis_pontos_jogador_2"
+        android:text="+6"
+        app:layout_constraintBottom_toBottomOf="@+id/tres_pontos_jogador_2"
+        app:layout_constraintStart_toEndOf="@+id/tres_pontos_jogador_1" />
+
+    <Button
+        android:id="@+id/nove_pontos_jogador_2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:onClick="mais_nove_pontos_jogador_2"
+        android:text="+9"
+        app:layout_constraintBottom_toBottomOf="@+id/seis_pontos_jogador_2"
+        app:layout_constraintStart_toEndOf="@+id/seis_pontos_jogador_1" />
+
+    <Button
+        android:id="@+id/doze_pontos_jogador_2"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:onClick="mais_doze_pontos_jogador_2"
+        android:text="+12"
+        app:layout_constraintBottom_toBottomOf="@+id/nove_pontos_jogador_2"
+        app:layout_constraintStart_toEndOf="@+id/nove_pontos_jogador_1" />
+
+    <Button
+        android:id="@+id/bt_historico_jogadas"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="abrir_historico_jogadas"
+        android:text="Histórico de Jogadas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/um_ponto_jogador_2"
+        app:layout_constraintTop_toBottomOf="@+id/um_ponto_jogador_2" />
+
+    <Button
+        android:id="@+id/bt_zerar_historico"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="zerar_historico"
+        android:text="Zerar Histórico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/bt_historico_jogadas"
+        app:layout_constraintTop_toBottomOf="@+id/bt_historico_jogadas" />
+
+    <Button
+        android:id="@+id/bt_informar_nomes"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="informar_nomes"
+        android:text="Informar Nomes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/bt_zerar_historico"
+        app:layout_constraintTop_toBottomOf="@+id/bt_zerar_historico" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
